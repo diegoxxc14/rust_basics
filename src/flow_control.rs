@@ -49,8 +49,28 @@ pub fn bucles2(){
     // loop como expresión
     let res = loop {
         if a == b {
-            break a;
+            break a; // Detiene el bucle y devuelve a
+        }
+        if a < b {
+            b -= a;
+        } else {
+            a -= b;
         }
     };
 
+    print!("{res}");
+}
+
+pub fn bucles3(){
+    'outer: for x in 1..5 {
+        println!("x: {x}");
+        let mut i = 0;
+        while i < x {
+            println!("x: {x}, i: {i}");
+            i += 1;
+            if i == 3 {
+                break 'outer;  // Se detiene el bucle exterior tras tres iteraciones del bucle interno.
+            }
+        }
+    }
 }

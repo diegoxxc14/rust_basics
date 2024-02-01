@@ -24,5 +24,6 @@ fn main() {
     // CONTROL DE FLUJOS
     //flow_control::conditionals();
     //flow_control::bucles();
-    flow_control::bucles2();
+    //flow_control::bucles2();
+    flow_control::bucles3();
 }
