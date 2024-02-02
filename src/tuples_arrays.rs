@@ -15,3 +15,16 @@ pub fn tuples_arrays(){
     println!("t.0: {}", t.0);
     println!("t.1: {}", t.1);
 }
+
+#[rustfmt::skip]
+pub fn patrones(input: char){
+    // Las comparaciones se hacen de arriba a abajo y gana el primer match.
+    // También puede ser como expresión
+    match input {
+        'q'                         => println!("Quitting"),
+        'a' | 's' | 'w' | 'd'       => println!("Moving around"),  // | or
+        '0'..='9'                   => println!("Number input"),
+        key if key.is_lowercase() => println!("Lowercase: {key}"),
+        _                           => println!("Something else"),  // comodín para cualquier valor (Caso final)
+    }
+}

@@ -41,5 +41,8 @@ fn main() {
     //println!("Length: {}", flow_control::collatz_length(11));
 
     // TUPLES AND ARRAYS
-    tuples_arrays::tuples_arrays();
+    //tuples_arrays::tuples_arrays();
+
+    // PATTERNS
+    tuples_arrays::patrones('d');
 }
