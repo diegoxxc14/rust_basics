@@ -70,6 +70,11 @@ pub fn fib(n: u32) -> u32 {
 }
 
 // Test function
-pub fn message(message:&str) {
+pub fn message(message:&str) -> &str{
     println!("Mensaje: {message}");
+    let m = "Mensaje de retorno";
+    // The last expression in a function body (or any block) becomes the return value
+    // in this case 'm'
+    m  // Ojo, se debe omitir el ;
+    //return m; // Other option
 }
