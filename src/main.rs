@@ -45,4 +45,9 @@ fn main() {
 
     // PATTERNS
     tuples_arrays::patrones('d');
+    // Desestructurar Enums
+    //  Tuple
+    tuples_arrays::describe_point((0,-1));
+    //  Array
+    tuples_arrays::triple_array([5,-2,3]);
 }

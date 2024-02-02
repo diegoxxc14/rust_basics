@@ -28,3 +28,23 @@ pub fn patrones(input: char){
         _                           => println!("Something else"),  // comodín para cualquier valor (Caso final)
     }
 }
+
+// Una tupla de enteros como parámetro
+pub fn describe_point(point: (i32, i32)){
+    match point {
+        (0, _)      => println!("eje Y"),
+        (_, 0)      => println!("eje X"),
+        (x, _) if x < 0 => println!("izquierda del eje Y"),  // 'x' como parámetro para usarlo
+        (_, y) if y < 0 => println!("debajo del eje X"),
+        _           => println!("1er cuadrante"),
+    }
+}
+
+pub fn triple_array(triple: [i8; 3]){
+    println!("Tell me about {triple:?}");
+    match triple {
+        [0, y, z]   => println!("First is 0, y={y} and z={z}"),
+        [1, ..]             => println!("First is 1 and the rest were ignored"),
+        _                   => println!("All elements were ignored")
+    }
+}
