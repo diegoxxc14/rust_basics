@@ -1,6 +1,7 @@
 
 mod types_values;
 mod flow_control;
+mod tuples_arrays;
 
 fn main() {
     println!("Hello 🌐!");
@@ -37,5 +38,8 @@ fn main() {
     //println!("{n}! = {}", flow_control::factorial(4));
 
     // EXERCISE 2
-    println!("Length: {}", flow_control::collatz_length(11));
+    //println!("Length: {}", flow_control::collatz_length(11));
+
+    // TUPLES AND ARRAYS
+    tuples_arrays::tuples_arrays();
 }
