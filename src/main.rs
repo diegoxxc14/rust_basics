@@ -25,5 +25,7 @@ fn main() {
     //flow_control::conditionals();
     //flow_control::bucles();
     //flow_control::bucles2();
-    flow_control::bucles3();
+    //flow_control::bucles3();
+    flow_control::bloques();
+    flow_control::ambitos_var();
 }

@@ -74,3 +74,35 @@ pub fn bucles3(){
         }
     }
 }
+
+pub fn bloques(){
+    let z = 13;
+    let x = {
+        // Si la última expresión del bloque termina con ;, el tipo y el valor resultante será ()
+        let y = 10;
+        println!("y: {y}");
+        // Sino el tipo y el valor será:
+        z - y
+    };
+
+    println!("x: {x}");
+}
+
+pub fn ambitos_var(){
+    let a = 10;
+    println!("before: {a}");
+    {
+        let a = "hello";
+        println!("innner scope: {a}");
+
+        // Después del sombreado las ubicaciones de memoria de ambas variables existen al mismo tiempo
+        let a = true;
+        println!("shadowed in inner scope: {a}");
+
+        //let b = 10;
+    }
+
+    println!("after: {a}");
+    //println!("b: {b}");  // Error - no access, only inner block
+
+}
