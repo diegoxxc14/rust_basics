@@ -106,3 +106,32 @@ pub fn ambitos_var(){
     //println!("b: {b}");  // Error - no access, only inner block
 
 }
+
+pub fn factorial(n: u32) -> u32 {
+    let mut product = 1;
+    for i in 1..=n {
+        product *= dbg!(i);  // Prints and returns the value of a given expression for quick and dirty debugging
+    }
+    product
+}
+
+fn fizzbuzz(n: u32) -> u32 {
+    todo!("Se implemetará posteriormente");
+}
+
+/// Determine the length of the collatz sequence beginning at `n`.
+pub fn collatz_length(mut n: i32) -> i32 {
+    let mut len  = 1;
+    loop {
+        n = if n%2 == 0 { n / 2 } else { (n * 3) +  1 };
+        len+=1;
+        if n==1 {
+            break;
+        }
+    }
+    len
+  }
+  
+  fn main() {
+    todo!("Implement this")
+  }

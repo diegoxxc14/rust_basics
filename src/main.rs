@@ -17,7 +17,7 @@ fn main() {
     // INFERENCIA DE TIPOS
     //types_values::types_inference();
 
-    // EXERCISE
+    // EXERCISE 1
     //let n = 4;
     //println!("fib(n) = {}", types_values::fib(n));
 
@@ -26,6 +26,16 @@ fn main() {
     //flow_control::bucles();
     //flow_control::bucles2();
     //flow_control::bucles3();
-    flow_control::bloques();
-    flow_control::ambitos_var();
+    //flow_control::bloques();
+    //flow_control::ambitos_var();
+
+    // FUNCTION
+    //println!("Return: {}", types_values::message("Hola mundo"));
+
+    // MACROS
+    //let n = 4;
+    //println!("{n}! = {}", flow_control::factorial(4));
+
+    // EXERCISE 2
+    println!("Length: {}", flow_control::collatz_length(11));
 }
